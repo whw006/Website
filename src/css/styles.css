@@ -8,9 +8,44 @@
   margin-right: 50% !important;
   font-size: 36px !important; }
 
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #000000;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px; }
+
 .navbar-toggler {
-  border: 0px solid transparent !important;
-  border-radius: 0px !important; }
+  border: none !important;
+  margin-left: 11px;
+  background: transparent !important;
+  color: #000000 !important; }
+
+.navbar-toggler .top-bar {
+  color: #000000 !important;
+  transform: rotate(45deg);
+  transform-origin: 10% 10%; }
+
+.navbar-toggler .middle-bar {
+  color: #000000 !important;
+  opacity: 0;
+  margin-right: 0px; }
+
+.navbar-toggler .bottom-bar {
+  color: #000000 !important;
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%; }
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0); }
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  margin-right: 0px; }
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0); }
 
 button:focus {
   outline: 0px dotted !important;
@@ -59,10 +94,8 @@ button:focus {
   transition: 0s ease;
   opacity: 0;
   position: absolute;
-  top: 9%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 92.25%;
+  left: 85%;
   text-align: center; }
 
 .container:hover .image {
@@ -99,14 +132,20 @@ button:focus {
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-right: 5px !important;
-    margin-left: 0px !important; } }
+    margin-left: 0px !important; }
+  .card {
+    padding-right: 90px !important;
+    padding-left: 90px !important; } }
 
 @media (min-width: 576px) {
   .navbar-brand {
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-right: 50px !important;
-    margin-left: 50px !important; } }
+    margin-left: 50px !important; }
+  .card {
+    padding-right: 0px !important;
+    padding-left: 0px !important; } }
 
 @media (min-width: 768px) {
   .navbar-brand {
